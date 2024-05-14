@@ -37,4 +37,3 @@ int main()
 	mahasiswa mhs2("Asroni");
 	mahasiswa mhs3("Andi Kurniawan");
 	mahasiswa mhs4("Joko Purbo");
-}
