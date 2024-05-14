@@ -2,27 +2,26 @@
 #include <string>
 using namespace std;
 
-class mahasiswa
+class Mahasiswa
 {
-public:
+private:
     int nim;
     string nama;
-
-private:
-    int Mahasiswa()
+public:
+    Mahasiswa()
     {
         nim = 0;
         nama = "";
     };
-    int Mahasiswa(int iNim)
+    Mahasiswa(int iNim)
     {
         nim = iNim;
     };
-    int Mahasiswa(string iNama)
+    Mahasiswa(string iNama)
     {
         nama = iNama;
     };
-    int Mahasiswa(int iNim, string iNama)
+    Mahasiswa(int iNim, string iNama)
     {
         nim = iNim;
         nama = iNama;
@@ -33,3 +32,18 @@ private:
         cout << endl;
     }
 };
+
+int main()
+{
+    Mahasiswa mhs1;
+    Mahasiswa mhs2(20);
+    Mahasiswa mhs3("Indra");
+    Mahasiswa mhs4(30, "Fauzan");
+
+    mhs1.cetak();
+    mhs2.cetak();
+    mhs3.cetak();
+    mhs4.cetak();
+    
+    return 0;
+}
